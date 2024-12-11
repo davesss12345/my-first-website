@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dave's Ice Cream Delights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            background-image: url('i500.gif'); /* Set background image */
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            background-color: rgba(255, 204, 0, 0.9); /* Semi-transparent background */
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Allow positioning for logo */
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #fff; /* White text for header */
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00; /* Hover effect for navigation links */
+        }
+        .logo {
+            position: absolute; /* Position logo in header */
+            top: 15px;
+            left: 20px;
+            width: 80px; /* Adjust logo size */
+            height: auto; /* Maintain aspect ratio */
+        }
+        section {
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            margin-top: 20px;
+            border-radius: 10px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #fff;
+            transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        .product-description {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .cta-button {
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e6b800;
+        }
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            header {
+                text-align: center;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1.1em;
+            }
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+            .product img {
+                width: 80px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            section {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="i29.jpg" alt="Ice Cream Delights Logo" class="logo">
+        <h1>Dave's Ice Cream Delights</h1>
+        <nav>
+             <a href="home.html" target="_blank">Home</a> 
+             <a href="flavors.html" target="_blank">Flavors</a> 
+             <a href="about.html" target="_blank">About Us</a> 
+             <a href="contact.html" target="_blank">Contact</a> 
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Dave's Ice Cream Delights!</h2>
+        <p>Indulge in a world of delicious flavors and creamy textures at Ice Cream Delights. We craft our ice cream using the finest ingredients, creating unique flavors that are sure to please any palate. Whether you’re a fan of classic favorites or adventurous combinations, we have something for everyone!</p>
+
+        <!-- Product Description -->
+        <div class="product">
+            <img src="i100.gif" alt="Ice Cream Delight">
+            <div>
+                <h3>Ice Cream Delights</h3>
+                <p class="product-description">Our Ice Cream Delights are made from a blend of the finest, natural ingredients. We use creamy milk, premium vanilla, and handpicked fruits to create mouth-watering flavors that stand out. Our specialty is in offering unique combinations, from chocolate fudge swirl to tropical coconut dream!</p>
+                <a href="flavors.html" class="cta-button">Explore Flavors</a>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h3>What Our Customers Say</h3>
+            <div class="testimonial">
+                <p>"Dave's Ice Cream is the best! The flavors are so unique and delicious. I can't get enough!" - Layam K.</p>
+            </div>
+            <div class="testimonial">
+                <p>"Absolutely love the tropical coconut dream! It's a treat I can't stop coming back for!" - Pepito J.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dave's Ice Cream Delights. All Rights Reserved.</p>
+        <div>
+            <a href="https://facebook.com/davesicecream" target="_blank">Facebook</a>
+            <a href="https://twitter.com/davesicecream" target="_blank">Twitter</a>
+            <a href="https://instagram.com/davesicecream" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
